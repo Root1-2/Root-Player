@@ -31,7 +31,7 @@ module.exports = [
   {
     // Loads .css files
     test: /\.css$/,
-    include: [path.resolve(_dirname, "app/src")],
+    include: [path.resolve(__dirname, "app/src")],
     use: ["style-loader", "css-loader", "postcss-loader"]
   }
   // Put your webpack loader rules in this array.  This is where you would put
