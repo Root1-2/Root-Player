@@ -1,4 +1,4 @@
-import { MemoryRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import React from "react";
 
 import AppLayout from "./ui/AppLayout.jsx";
@@ -16,7 +16,7 @@ import Settings from "./pages/Settings.jsx";
 
 function App() {
   return (
-    <MemoryRouter>
+    <HashRouter>
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<Navigate replace to="homepage" />} />
@@ -33,7 +33,7 @@ function App() {
           <Route path="settings" element={<Settings />} />
         </Route>
       </Routes>
-    </MemoryRouter>
+    </HashRouter>
   );
 }
 

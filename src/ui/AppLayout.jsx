@@ -4,7 +4,6 @@ import React from "react";
 function AppLayout() {
   return (
     <div>
-      <p>AppLayout</p>
       <Outlet />
     </div>
   );
