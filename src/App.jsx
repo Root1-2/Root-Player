@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import React from "react";
 
 import AppLayout from "./ui/AppLayout.jsx";
@@ -16,24 +16,22 @@ import Settings from "./pages/Settings.jsx";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<AppLayout />}>
-          <Route index element={<Navigate replace to="homepage" />} />
-          <Route path="homepage" element={<Home />} />
-          <Route path="album" element={<Albums />} />
-          <Route path="artists" element={<Artists />} />
-          <Route path="folders" element={<Folders />} />
-          <Route path="genres" element={<Genres />} />
-          <Route path="mostPlayed" element={<MostPlayed />} />
-          <Route path="nowPlaying" element={<NowPlaying />} />
-          <Route path="playlists" element={<Playlists />} />
-          <Route path="queue" element={<Queue />} />
-          <Route path="library" element={<Library />} />
-          <Route path="settings" element={<Settings />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <HashRouter>
+      <Route element={<AppLayout />}>
+        <Route index element={<Navigate replace to="homepage" />} />
+        <Route path="homepage" element={<Home />} />
+        <Route path="album" element={<Albums />} />
+        <Route path="artists" element={<Artists />} />
+        <Route path="folders" element={<Folders />} />
+        <Route path="genres" element={<Genres />} />
+        <Route path="mostPlayed" element={<MostPlayed />} />
+        <Route path="nowPlaying" element={<NowPlaying />} />
+        <Route path="playlists" element={<Playlists />} />
+        <Route path="queue" element={<Queue />} />
+        <Route path="library" element={<Library />} />
+        <Route path="settings" element={<Settings />} />
+      </Route>
+    </HashRouter>
   );
 }
 
