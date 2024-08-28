@@ -1,5 +1,5 @@
 function Genres() {
-  return <div></div>;
+  return <div>Genres</div>;
 }
 
 export default Genres;

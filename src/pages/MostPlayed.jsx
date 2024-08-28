@@ -1,5 +1,5 @@
 function MostPlayed() {
-  return <div></div>;
+  return <div>MostPlayed</div>;
 }
 
 export default MostPlayed;

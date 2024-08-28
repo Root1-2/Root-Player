@@ -1,5 +1,5 @@
 function NowPlaying() {
-  return <div></div>;
+  return <div>NowPlaying</div>;
 }
 
 export default NowPlaying;

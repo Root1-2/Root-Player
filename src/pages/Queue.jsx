@@ -1,5 +1,5 @@
 function Queue() {
-  return <div></div>;
+  return <div>Queue</div>;
 }
 
 export default Queue;
