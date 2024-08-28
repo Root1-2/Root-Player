@@ -3,5 +3,9 @@ import * as React from "react";
 import App from "./App.jsx";
 import "./index.css";
 
-const root = createRoot(document.body);
+const rootElement = document.createElement("div");
+rootElement.id = "root";
+document.body.appendChild(rootElement);
+
+const root = createRoot(rootElement);
 root.render(<App />);
