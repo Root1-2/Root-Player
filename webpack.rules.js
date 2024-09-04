@@ -32,8 +32,21 @@ module.exports = [
     // Loads .css files
     test: /\.css$/,
     include: [path.resolve(__dirname, "app/src")],
-    use: ["style-loader", "css-loader", "postcss-loader"]
-  }
+    use: ["style-loader", "css-loader", "postcss-loader"],
+  },
+  {
+    test: /\.(png|jpe?g|gif|svg)$/i,
+    use: [
+      {
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[ext]",
+          outputPath: "assets/images/",
+          publicPath: "assets/images/",
+        },
+      },
+    ],
+  },
   // Put your webpack loader rules in this array.  This is where you would put
   // your ts-loader configuration for instance:
   /**

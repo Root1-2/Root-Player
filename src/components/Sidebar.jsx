@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { CiSettings } from "react-icons/ci";
 import { GoGear, GoHome } from "react-icons/go";
-import { LuChevronFirst } from "react-icons/lu";
+import { LuChevronFirst, LuChevronLast } from "react-icons/lu";
+import Logo from "../images/rootPlayerLogo.png";
 
 export default function Sidebar({ children }) {
+  const [sideOpen, setSideOpen] = useState(true);
+
   return (
     <aside className="h-screen">
       <nav className="flex h-full flex-col border-r bg-gray-50 shadow-sm">
         <div className="item-center flex justify-between p-4 pb-2">
-          <img src="" alt="Logo" className="w-32" />
-          <button className="rounded-lg bg-gray-50 p-1.5 hover:bg-gray-100">
-            <LuChevronFirst />
-            <span></span>
+          <img src={Logo} alt="Logo" className="w-32" />
+          <button
+            onClick={() => setSideOpen((curr) => !curr)}
+            className="rounded-lg bg-gray-50 p-1.5 hover:bg-gray-100"
+          >
+            {sideOpen ? <LuChevronFirst /> : <LuChevronLast />}
           </button>
         </div>
 
