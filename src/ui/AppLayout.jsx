@@ -1,10 +1,15 @@
 import { Outlet } from "react-router-dom";
 import React from "react";
 
+import Sidebar from "../components/Sidebar.jsx";
+
 function AppLayout() {
   return (
-    <div>
-      <Outlet />
+    <div className="flex">
+      <Sidebar />
+      <div className="mx-5">
+        <Outlet />
+      </div>
     </div>
   );
 }
