@@ -9,7 +9,6 @@ import {
   MdOutlineQueueMusic,
   MdOutlineSpaceDashboard,
 } from "react-icons/md";
-import { FaFire } from "react-icons/fa";
 import { CgUnavailable } from "react-icons/cg";
 import { RiPlayList2Line } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
