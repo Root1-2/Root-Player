@@ -1,6 +1,4 @@
 import React, { createContext, useContext, useState } from "react";
-import { CiSettings } from "react-icons/ci";
-import { GoGear, GoHome } from "react-icons/go";
 import { LuChevronFirst, LuChevronLast } from "react-icons/lu";
 import Logo from "../images/rootPlayerLogo.png";
 
