@@ -1,4 +1,5 @@
 import React from "react";
+import { CiSettings } from "react-icons/ci";
 import { GoGear, GoHome } from "react-icons/go";
 import { LuChevronFirst } from "react-icons/lu";
 
@@ -18,7 +19,8 @@ export default function Sidebar({ children }) {
 
         <div className="flex border-t p-3">
           <button className="flex gap-2">
-            <span>Settings</span>
+            <CiSettings />
+            <p>Settings</p>
           </button>
         </div>
       </nav>
