@@ -2,8 +2,9 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 import Sidebar, { SidebarItem } from "../components/Sidebar.jsx";
-import { GoHome, GoGear } from "react-icons/go";
+import { GoHome } from "react-icons/go";
 import {
+  MdLocalFireDepartment,
   MdOutlineLibraryMusic,
   MdOutlineQueueMusic,
   MdOutlineSpaceDashboard,
@@ -17,14 +18,23 @@ function AppLayout() {
   return (
     <div className="flex">
       <Sidebar>
-        <SidebarItem icon={<CiSearch />} text="Search" />
-        <SidebarItem icon={<GoHome />} text="Home" active />
-        <SidebarItem icon={<MdOutlineSpaceDashboard />} text="Dashboard" />
-        <SidebarItem icon={<MdOutlineLibraryMusic />} text="Library" />
-        <SidebarItem icon={<FaFire />} text="Most Played" />
-        <SidebarItem icon={<CgUnavailable />} text="Not Played" />
-        <SidebarItem icon={<MdOutlineQueueMusic />} text="Queue" />
-        <SidebarItem icon={<RiPlayList2Line />} text="Playlist" />
+        <SidebarItem icon={<CiSearch size={24} />} text="Search" />
+        <SidebarItem icon={<GoHome size={24} />} text="Home" active />
+        <SidebarItem
+          icon={<MdOutlineSpaceDashboard size={24} />}
+          text="Dashboard"
+        />
+        <SidebarItem
+          icon={<MdOutlineLibraryMusic size={24} />}
+          text="Library"
+        />
+        <SidebarItem
+          icon={<MdLocalFireDepartment size={24} />}
+          text="Most Played"
+        />
+        <SidebarItem icon={<CgUnavailable size={24} />} text="Not Played" />
+        <SidebarItem icon={<MdOutlineQueueMusic size={24} />} text="Queue" />
+        <SidebarItem icon={<RiPlayList2Line size={24} />} text="Playlist" />
       </Sidebar>
 
       <div className="mx-5">
