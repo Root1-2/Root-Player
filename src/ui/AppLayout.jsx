@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 
 import Sidebar, { SidebarItem } from "../components/Sidebar.jsx";
+import Playbar from "../components/Playbar.jsx";
 import { GoHome } from "react-icons/go";
 import {
   MdLocalFireDepartment,
@@ -36,9 +37,11 @@ function AppLayout() {
         <SidebarItem icon={<RiPlayList2Line size={24} />} text="Playlist" />
       </Sidebar>
 
-      <div className="mx-5">
+      <div className="m-5">
         <Outlet />
       </div>
+
+      <Playbar />
     </div>
   );
 }

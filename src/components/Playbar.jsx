@@ -1,5 +1,7 @@
+import React from "react";
+
 function Playbar() {
-  return <div></div>;
+  return <div className="">Footer</div>;
 }
 
 export default Playbar;
