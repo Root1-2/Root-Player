@@ -41,7 +41,7 @@ function AppLayout() {
         <Outlet />
       </div>
 
-      <Playbar />
+      {/* <Playbar /> */}
     </div>
   );
 }
