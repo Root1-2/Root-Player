@@ -17,6 +17,7 @@ import { CiSearch } from "react-icons/ci";
 function AppLayout() {
   return (
     <div className="flex">
+      {/* Add Custom Title Bar */}
       <Sidebar>
         <SidebarItem icon={<CiSearch size={24} />} text="Search" />
         <SidebarItem icon={<GoHome size={24} />} text="Home" active />
